@@ -11,85 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.name {
-    font-size: 24px;
-    margin: 20px 40px;
-    font-weight: 500;
-}
 
-.intro-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10vh 10vw;
-    gap: 4vw;
-}
-
-.display-picture {
-    width: 30%;
-    border-radius: 45px;
-}
-
-.main-text {
-    font-size: 35px;
-}
-
-.sub-text {
-    font-size: 24px;
-}
-
-
-/* Project Section */
-
-.projects-section {
-    margin: 50px;
-}
-
-.project {
-    border: 10px solid black;
-    display: flex;
-    flex-direction: row;
-    gap: 5vw;
-    align-items: center;
-    padding-left: 3vw;
-    margin-top: 50px;
-
-}
-
-.project-picture {
-    height: 70vh;
-}
-
-
-/* Contact Section */
-
-.contact-section {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.cv-btn {
-    background-color: yellow;
-    border: 2px solid black;
-    padding: 8px 12px;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.social-img {
-    height: 30px;
-    width: 30px;
-    margin: 10px;
-}
 
 
 
@@ -116,50 +38,193 @@ body {
 }
 
 
+/* Banner Section */
+
+.banner-section {
+    background-color: #2e3141;
+    padding: 5% 15%;
+    height: 100vh;
+}
+
+.banner-image {
+    width: 25%;
+    height: auto;
+}
+
+.banner-name {
+    font-size: 36px;
+    color: white;
+}
+
+.banner-text {
+    font-size: 22px;
+    font-weight: lighter;
+    color: white;
+}
+
+
+
+/* About Section */
+
+.about-section {
+    background-color: #4c5c96;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.about-text {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.reverse {
+    text-align: right;
+}
+
+
+
+/* Education Section */
+
+.education-section {
+    background-color: #45558d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.section-image {
+    width: 30vw;
+    height: fit-content;
+}
+
+.section-content {
+    width: 50%;
+}
+
+.section-header {
+    font-size: 32px;
+}
+
+.header-line {
+    background-color: white;
+    opacity: 0.25;
+}
+
+
+
+/* Projects section */
+
+.projects-section {
+    background-color: #353849;
+    color: white;
+    padding: 5% 15%;
+    height: 80vh;
+}
+
+.left {
+    text-align: left;
+}
+
+
+
+/* Contact Section */
+
+.contact-section {
+    background-color: #2e3141;
+    color: white;
+    padding: 5% 15%;
+}
+
+.cv-btn {
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 10px 15px;
+    margin-right: 25px;
+}
+
+.cv-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-img {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+
+
 /* Mobile view */
 
-@media screen and (max-width: 1100px) {
-    .name {
-        font-size: 20px;
+@media screen and (max-width: 600px) {
+
+    /* Banner Section */
+
+    .banner-section {
+        padding: 10%;
     }
     
-    .intro-section {
-        flex-direction: column;
+    .banner-image {
+        width: 100%;
     }
     
-    .display-picture {
-        width: 90%;
+    .banner-name {
+        font-size: 22px;
     }
     
-    .main-text {
-        font-size: 28px;
-    }
-    
-    .sub-text {
-        font-size: 18px;
-    }
-    
-    
-    /* Project Section */
-    
-    .projects-section {
-        margin: 5px;
-    }
-    
-    .project {
-        flex-direction: column;
-        padding: 0;
-        border: 5px solid black;
-    
+    .banner-text {
+        font-size: 14px;
     }
 
-    .project .main-text, .sub-text {
-        margin: 10px;
+    /* About Section */
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .section-content {
+        width: 80%;
+    }
+
+    .section-header {
+        font-size: 22px;
+    }
+
+    .section-image {
+        width: 80vw;
     }
     
-    .project-picture {
-        width: 100%;
-        height: fit-content;
+    .about-text {
+        font-weight: lighter;
+        font-size: 14px;
     }
-    
+
+    /* Education Section */
+
+    .education-section {
+        flex-direction: column;
+    }
+
+    /* Project Section */
+
+    .projects-section {
+        padding: 10%;
+        height: max-content;
+    }    
+
 }
