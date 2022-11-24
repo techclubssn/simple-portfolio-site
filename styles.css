@@ -1,158 +1,153 @@
-:root {
-    --primary: #EEEFF1;
-}
-
 * {
     margin: 0;
+    font-family: Helvetica, sans-serif;
 }
 
-body {
-    background-color: var(--primary);
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
-
-
-
-
-/* About Section */
-
-.about-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40vw;
-}
-
-.skill {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
+/* Desktop View */
 
 /* Banner Section */
 
 .banner-section {
     background-color: #2e3141;
-    padding: 5% 15%;
-    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
 .banner-image {
-    width: 25%;
-    height: auto;
+    width: 25vw;
 }
 
 .banner-name {
+    color: white;
     font-size: 36px;
-    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.banner-text {
-    font-size: 22px;
-    font-weight: lighter;
-    color: white;
-}
-
-
-
-/* About Section */
-
-.about-section {
-    background-color: #4c5c96;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-}
-
-.about-text {
-    font-weight: lighter;
-    font-size: 16px;
-}
-
-.reverse {
-    text-align: right;
-}
-
-
-
-/* Education Section */
-
-.education-section {
-    background-color: #45558d;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-items: center;
-}
-
-.section-image {
-    width: 30vw;
-    height: fit-content;
-}
-
-.section-content {
-    width: 50%;
-}
-
-.section-header {
-    font-size: 32px;
-}
-
-.header-line {
+.hr-line {
     background-color: white;
     opacity: 0.25;
 }
 
+.banner-text {
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
+/* About Section */
 
-/* Projects section */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #4c5c96;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-content {
+    width: 50%;
+
+}
+
+.about-title {
+    color: white;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.about-text {
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.about-image {
+    width: 30vw;
+    height: fit-content;
+}
+
+/* Education Section */
+
+.education-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #45558d;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.education-content {
+    width: 50%;
+
+}
+
+.education-title {
+    color: white;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.education-text {
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.education-image {
+    width: 30vw;
+    height: fit-content;
+}
+
+/* Projects Section */
 
 .projects-section {
     background-color: #353849;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+
+.projects-title {
     color: white;
-    padding: 5% 15%;
-    height: 80vh;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
-.left {
-    text-align: left;
+.projects-text {
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
 }
 
-
-
-/* Contact Section */
+/* Contact-section */
 
 .contact-section {
     background-color: #2e3141;
-    color: white;
-    padding: 5% 15%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
-.cv-btn {
-    background-color: transparent;
-    border-radius: 5px;
+.contact-title {
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    font-size: 16px;
-    font-weight: lighter;
-    padding: 10px 15px;
-    margin-right: 25px;
-}
-
-.cv-btn:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .socials {
@@ -164,19 +159,19 @@ body {
 .social-img {
     height: 30px;
     width: 30px;
-    margin: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 
-
-/* Mobile view */
+/* Mobile View */
 
 @media screen and (max-width: 600px) {
-
-    /* Banner Section */
-
+    
+    /* Banner section */
     .banner-section {
-        padding: 10%;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     
     .banner-image {
@@ -188,43 +183,85 @@ body {
     }
     
     .banner-text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* About Section */
 
     .about-section {
         flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
-    .section-content {
-        width: 80%;
-    }
-
-    .section-header {
+    .about-title {
         font-size: 22px;
     }
 
-    .section-image {
-        width: 80vw;
-    }
-    
     .about-text {
-        font-weight: lighter;
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    /* Education Section */
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    /* Education section */
 
     .education-section {
         flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
-    /* Project Section */
+    .education-title {
+        font-size: 22px;
+    }
+
+    .education-text {
+        font-size: 16px;
+    }
+
+    .education-content {
+        width: 100%;
+    }
+
+    .education-image {
+        width: 100%;
+    }
+
+    /* Projects Section */
 
     .projects-section {
-        padding: 10%;
-        height: max-content;
-    }    
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 
+
+    .projects-title {
+        font-size: 22px;
+    }
+
+    .projects-text {
+        font-size: 16px;
+    }
+
+    /* Contact Section */
+
+    .contact-section {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .contact-title {
+        font-size: 22px;
+    }
+
+
+    
 }
+
